@@ -5,7 +5,10 @@ import edu.wuwang.opengl.camera.Camera3Activity;
 import edu.wuwang.opengl.vr.VrContextActivity;
 import java.util.ArrayList;
 
+import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ConfigurationInfo;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -34,6 +37,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        System.out.println("-------------------------");
+        System.out.println(getGleVersion());
         mList= (RecyclerView)findViewById(R.id.mList);
         mList.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         data=new ArrayList<>();
@@ -109,5 +114,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         int position= (int)view.getTag();
         MenuBean bean=data.get(position);
         startActivity(new Intent(this,bean.clazz));
+    }
+    public String getGleVersion(){
+        ActivityManager am = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        ConfigurationInfo info = am.getDeviceConfigurationInfo();
+        String v = info.getGlEsVersion();
+        return info.getGlEsVersion();
     }
 }

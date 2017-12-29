@@ -103,6 +103,7 @@ public abstract class AFilter implements GLSurfaceView.Renderer {
         glHTexture=GLES20.glGetUniformLocation(mProgram,"vTexture");
         glHMatrix=GLES20.glGetUniformLocation(mProgram,"vMatrix");
         hIsHalf=GLES20.glGetUniformLocation(mProgram,"vIsHalf");
+
         glHUxy=GLES20.glGetUniformLocation(mProgram,"uXY");
         onDrawCreatedSet(mProgram);
     }

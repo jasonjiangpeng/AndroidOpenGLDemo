@@ -1,0 +1,182 @@
+<!-- Copyright (C) 2013  塘上科技,tangsci.cn
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<EditText
+			android:id="@+id/InputText"
+			android:text="@string/tts_text"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+
+			android:textStyle="bold"
+			android:inputType="textMultiLine"
+			android:minLines="6"
+			android:gravity="left|top" >
+	</EditText>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:text="@string/volume_label"
+				android:layout_height="fill_parent"
+
+				android:textStyle="bold"
+				android:gravity="left"
+				android:layout_width="wrap_content">
+		</TextView>
+		<TextView
+				android:id="@+id/Volume"
+				android:text="@string/zero"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+
+				android:gravity="left">
+		</TextView>
+	</LinearLayout>
+	<SeekBar
+			android:id="@+id/SeekVolume"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:max="200"
+			android:progress="50" >
+	</SeekBar>
+
+	<LinearLayout
+		android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+		<TextView
+			android:text="@string/speed_label"
+		    android:layout_height="fill_parent" 
+			android:textSize="@dimen/default_text_size"
+		    android:textStyle="bold" 
+			android:gravity="left"
+		    android:layout_width="wrap_content">
+		</TextView>
+		<TextView
+		    android:id="@+id/Speed" 
+			android:text="@string/zero"
+		    android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:textSize="@dimen/default_text_size"
+			android:gravity="left">
+		</TextView>
+	</LinearLayout>
+	<SeekBar
+			android:id="@+id/SeekSpeed"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:max="200"
+			android:progress="20" >
+	</SeekBar>
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:text="@string/pitch_label"
+				android:layout_height="fill_parent"
+				android:textSize="@dimen/default_text_size"
+				android:textStyle="bold"
+				android:gravity="left"
+				android:layout_width="wrap_content">
+		</TextView>
+		<TextView
+				android:id="@+id/Pitch"
+				android:text="@string/zero"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:textSize= "@dimen/default_text_size"
+				android:gravity="left">
+		</TextView>
+	</LinearLayout>
+	<SeekBar
+			android:id="@+id/SeekPitch"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:max="200"
+			android:progress="20" >
+	</SeekBar>
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:text="@string/freqscale_label"
+				android:layout_height="fill_parent"
+				android:textSize="@dimen/default_text_size"
+				android:textStyle="bold"
+				android:gravity="left"
+				android:layout_width="wrap_content">
+		</TextView>
+		<TextView
+				android:id="@+id/Freqscale"
+				android:text="0"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:textSize= "@dimen/default_text_size"
+				android:gravity="left">
+		</TextView>
+	</LinearLayout>
+	<SeekBar
+			android:id="@+id/SeekFreqScale"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:max="200"
+			android:progress="20" >
+	</SeekBar>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/Play"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="@string/play">
+		</Button>
+		<Button
+				android:id="@+id/Pause"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:text="@string/pause">
+		</Button>
+		<Button
+				android:id="@+id/Stop"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:text="@string/stop">
+		</Button>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<Button
+				android:id="@+id/FemaleVoice"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:text="@string/female_voice">
+		</Button>
+		<Button
+				android:id="@+id/MaleVoice"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:text="@string/male_voice">
+		</Button>
+		<Button
+				android:id="@+id/ClearText"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:text="@string/clear">
+		</Button>
+
+	</LinearLayout>
+</LinearLayout>

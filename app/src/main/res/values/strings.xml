@@ -2,6 +2,19 @@
     <string name="app_name">OpenGL</string>
     <string name="change">切换</string>
 
+    <string name="tts_text">请输入要合成的文字</string>
+    <string name="app_label">塘上语音合成演示</string>
+    <string name="volume_label">音量:</string>
+    <string name="speed_label">语速:</string>
+    <string name="pitch_label">音高:</string>
+    <string name="freqscale_label">变声:</string>
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+    <string name="pause">暂停</string>
+    <string name="female_voice">女声</string>
+    <string name="male_voice">男声</string>
+    <string name="clear">清空</string>
+    <string name="zero">0</string>
     <string name="type_draw">绘制形体</string>
     <string name="type_texture">图片处理</string>
     <string name="type_vary">图形变换</string>
